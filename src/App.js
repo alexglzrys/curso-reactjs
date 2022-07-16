@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import TarjetaClass from './components/TarjetaClass';
 import TarjetaFunction from './components/TarjetaFunction';
+import Propiedades from './components/Propiedades';
 
 /**
  * Nota: Desde React 17, create-react-app importa de forma automática la librería de React en cada uno
@@ -34,6 +35,17 @@ function App() {
         <TarjetaClass title="Componente de Clase" message="Hola este es componente basado en clases" />
         <hr />
         <TarjetaFunction title="Componente Funcional" message="Hola este es un componente basado en una función" />
+        <hr />
+        {/* Las propiedades pasadas a un componente pueden ser de diferente tipo */}
+        <Propiedades 
+          cadena="Propiedad de tipo cadena"
+          numero={37} 
+          booleano={true} 
+          arreglo={[1,2,3]} 
+          objeto={{product: 'Manzana', price: 12.50}} 
+          funcion={(num) => num * 2}
+          elementoReact={<i>Texto con estilo de fuente itálica</i>}
+          componenteReact={<TarjetaFunction title="Componente" message="Componente pasado como valor de una prop" />} />
       </section>
     </div>
   );
