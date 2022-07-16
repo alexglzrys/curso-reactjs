@@ -4,6 +4,7 @@ import './App.css';
 import TarjetaClass from './components/TarjetaClass';
 import TarjetaFunction from './components/TarjetaFunction';
 import Propiedades from './components/Propiedades';
+import Estado from './components/Estado';
 
 /**
  * Nota: Desde React 17, create-react-app importa de forma automática la librería de React en cada uno
@@ -46,6 +47,8 @@ function App() {
           funcion={(num) => num * 2}
           elementoReact={<i>Texto con estilo de fuente itálica</i>}
           componenteReact={<TarjetaFunction title="Componente" message="Componente pasado como valor de una prop" />} />
+        <hr />
+        <Estado />
       </section>
     </div>
   );
