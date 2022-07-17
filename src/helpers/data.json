@@ -1,0 +1,34 @@
+{
+    "frameworks": [
+        {
+            "id": 1,
+            "name": "React JS",
+            "description": "React te ayuda a crear interfaces de usuario interactivas de forma sencilla.",
+            "url": "https://es.reactjs.org/"
+        },
+        {
+            "id": 2,
+            "name": "Angular",
+            "description": "Angular es un framework para aplicaciones web desarrollado en TypeScript, de código abierto, mantenido por Google, que se utiliza para crear y mantener aplicaciones web de una sola página.",
+            "url": "https://angular.io/"
+        },
+        {
+            "id": 3,
+            "name": "Vue JS",
+            "description": "Vue.js es un framework de JavaScript de código abierto para la construcción de interfaces de usuario y aplicaciones de una sola página.",
+            "url": "https://vuejs.org/"
+        },
+        {
+            "id": 4,
+            "name": "Polymer",
+            "description": "Polymer es una biblioteca JavaScript de código abierto para la creación de aplicaciones web utilizando componentes web.",
+            "url": "http://polymer-library.polymer-project.org/"
+        },
+        {
+            "id": 5,
+            "name": "Svelte",
+            "description": "Svelte es un compilador Front End gratuito y de código abierto ​ creado por Rich Harris y mantenido por los miembros del equipo central de Svelte. ​ Las aplicaciones Svelte no incluyen referencias al framework.",
+            "url": "https://svelte.dev/"
+        }
+    ]
+}

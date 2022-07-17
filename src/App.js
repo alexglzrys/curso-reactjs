@@ -6,6 +6,7 @@ import TarjetaFunction from './components/TarjetaFunction';
 import Propiedades from './components/Propiedades';
 import Estado from './components/Estado';
 import RenderizadoCondicional from './components/RenderizadoCondicional';
+import RenderizadoListas from './components/RenderizadoListas';
 
 /**
  * Nota: Desde React 17, create-react-app importa de forma automática la librería de React en cada uno
@@ -52,6 +53,8 @@ function App() {
         <Estado />
         <hr />
         <RenderizadoCondicional />
+        <hr />
+        <RenderizadoListas />
       </section>
     </div>
   );
