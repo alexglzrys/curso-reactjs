@@ -8,6 +8,7 @@ import Estado from './components/Estado';
 import RenderizadoCondicional from './components/RenderizadoCondicional';
 import RenderizadoListas from './components/RenderizadoListas';
 import { EventosClaseES6, EventosClaseES7, EventosPersonalizados } from './components/EventosClase';
+import ComunicacionComponentes from './components/ComunicacionComponentes'
 
 /**
  * Nota: Desde React 17, create-react-app importa de forma automática la librería de React en cada uno
@@ -62,6 +63,8 @@ function App() {
         <EventosClaseES7 />
         <hr />
         <EventosPersonalizados />
+        <hr />
+        <ComunicacionComponentes />
       </section>
     </div>
   );
