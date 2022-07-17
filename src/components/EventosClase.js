@@ -115,7 +115,78 @@ class EventosClaseES7 extends Component {
     }
 }
 
+// Un componente, que recibe por props un manejador de eventos, mismo que es asociado al evento click
+// Los eventos en React, solo existen en los elementos JSX
+const MiBoton = (props) => <button onClick={props.myOnClick}>Soy un componente de React</button>
+
+class EventosPersonalizados extends Component {
+    state = {
+        message: ''
+    }
+
+    // En React, los manejadores de eventos generalmente contienen el prefijo handleAction | handleNameMethod
+    handleClick = (event) => {
+
+        // ? React encapsula el evento como un Evento base sintético (SyntheticBaseEvent). Esto con la finalidad de dar soporte a cualquier tipo de navegador soportado por la versión de React.
+
+        // Evento Sintético
+        console.log(event);
+        // El acceso a las propiedades del evento.
+        console.log(event.target)
+
+        // ! Si se desea acceder al evento nativo de JS
+
+        // Evento nativo
+        console.log(event.nativeEvent)
+        // El acceso a las propiedades del evento nativo
+        console.log(event.nativeEvent.target)
+
+
+        this.setState((state, props) => ({
+            message: 'El estado a cambiado'
+        }))
+    }
+
+    // Manejador de evento que es ejecutado a través de un evento personalizado
+    handleMyClick = (event) => {
+        this.setState((state, props) => ({
+            message: 'Mensaje desde evento personalizado'
+        }))
+    }
+
+    // Manejador de evento que recibe información adicional
+    handleCustomClick = (event, data) => {
+        this.setState((state, props) => ({
+            message: data
+        }))
+    }
+
+    render() {
+        return (
+            <div>
+                <h4>Eventos Personalizados</h4>
+                {/* Los eventos en React solo existen en los elementos JSX */}
+                <button onClick={this.handleClick}>Soy un elemento JSX de React</button>
+                &nbsp;
+                {/* 
+                    Para reaccionar a un evento desde un componente en React, es necesario pasarle el controlador del evento mediante el uso de una prop
+                    - Los eventos en React solo existen en los elementos, no en la firma del componente
+                */}
+                <MiBoton myOnClick={this.handleMyClick} />
+                &nbsp;
+                {/* 
+                    Los manejadores de evento, pueden recibir información adicional necesaria para realizar cierta tarea en específico.
+                    - Para ello se hace uso de un arrow functión que recibe el evento disparado, internamente se invoca al metodo manejador del evento, pasandole como parámetros, el evento seguido de la data adicional
+                */}
+                <button onClick={(e) => this.handleCustomClick(e, 'Información pasada como parametro al manejador de eventos')}>Pasar información adicional al manejador del evento</button>
+                {this.state.message && <p>{this.state.message}</p>}
+            </div>
+        )
+    }
+}
+
 export {
     EventosClaseES6,
-    EventosClaseES7
+    EventosClaseES7,
+    EventosPersonalizados
 }
