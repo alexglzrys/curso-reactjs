@@ -7,6 +7,7 @@ import Propiedades from './components/Propiedades';
 import Estado from './components/Estado';
 import RenderizadoCondicional from './components/RenderizadoCondicional';
 import RenderizadoListas from './components/RenderizadoListas';
+import EventosClase from './components/EventosClase';
 
 /**
  * Nota: Desde React 17, create-react-app importa de forma automática la librería de React en cada uno
@@ -55,6 +56,8 @@ function App() {
         <RenderizadoCondicional />
         <hr />
         <RenderizadoListas />
+        <hr />
+        <EventosClase />
       </section>
     </div>
   );
