@@ -11,6 +11,7 @@ import { EventosClaseES6, EventosClaseES7, EventosPersonalizados } from './compo
 import ComunicacionComponentes from './components/ComunicacionComponentes'
 import CicloDeVida from './components/CicloDeVida';
 import LlamadasApiRest from './components/LlamadasApiRest';
+import ContadorHooks from './components/ContadorHooks';
 
 /**
  * Nota: Desde React 17, create-react-app importa de forma automática la librería de React en cada uno
@@ -71,6 +72,8 @@ function App() {
         <CicloDeVida />
         <hr />
         <LlamadasApiRest />
+        <hr />
+        <ContadorHooks title="Eventos en Componente Funcional - useState" />
       </section>
     </div>
   );
