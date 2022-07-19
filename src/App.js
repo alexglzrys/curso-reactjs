@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import TarjetaClass from './components/TarjetaClass';
@@ -12,6 +12,7 @@ import ComunicacionComponentes from './components/ComunicacionComponentes'
 import CicloDeVida from './components/CicloDeVida';
 import LlamadasApiRest from './components/LlamadasApiRest';
 import ContadorHooks from './components/ContadorHooks';
+import ScrollHooks from './components/ScrollHooks';
 
 /**
  * Nota: Desde React 17, create-react-app importa de forma automática la librería de React en cada uno
@@ -25,6 +26,9 @@ function App() {
   let mensaje = 'Hey Alejandro!, bienvenido al mundo de React';
   let herramientas = ['React JS', 'Angular', 'Vue', 'Svelte'];
   let isAuth = true;
+  const [visibleScrollComponent, setVisibleScrollComponent] = useState(true);
+
+  const handleVisible = () => setVisibleScrollComponent(false); 
 
   return (
     <div className="App">
@@ -74,6 +78,11 @@ function App() {
         <LlamadasApiRest />
         <hr />
         <ContadorHooks title="Eventos en Componente Funcional - useState" />
+        {visibleScrollComponent && (
+          <>
+            <hr />
+            <ScrollHooks handleVisible={handleVisible} />
+          </>)}
       </section>
     </div>
   );
