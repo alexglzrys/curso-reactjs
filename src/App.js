@@ -16,6 +16,7 @@ import ScrollHooks from './components/ScrollHooks';
 import RelojHooks from './components/RelojHooks';
 import AjaxHooks from './components/AjaxHooks';
 import HooksPersonalizados from './components/HooksPersonalizados';
+import Referencias from './components/Referencias';
 
 /**
  * Nota: Desde React 17, create-react-app importa de forma automática la librería de React en cada uno
@@ -92,6 +93,8 @@ function App() {
         <AjaxHooks /> 
         <hr />
         <HooksPersonalizados />
+        <hr />
+        <Referencias />
       </section>
     </div>
   );
