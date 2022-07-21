@@ -13,6 +13,7 @@ import CicloDeVida from './components/CicloDeVida';
 import LlamadasApiRest from './components/LlamadasApiRest';
 import ContadorHooks from './components/ContadorHooks';
 import ScrollHooks from './components/ScrollHooks';
+import RelojHooks from './components/RelojHooks';
 
 /**
  * Nota: Desde React 17, create-react-app importa de forma automática la librería de React en cada uno
@@ -83,6 +84,8 @@ function App() {
             <hr />
             <ScrollHooks handleVisible={handleVisible} />
           </>)}
+        <hr />
+        <RelojHooks /> 
       </section>
     </div>
   );
