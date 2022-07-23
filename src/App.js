@@ -19,6 +19,7 @@ import HooksPersonalizados from './components/HooksPersonalizados';
 import Referencias from './components/Referencias';
 import Formulario from './components/Formulario';
 import Estilos from './components/Estilos';
+import ComponentesEstilizados from './components/ComponentesEstilizados';
 
 /**
  * Nota: Desde React 17, create-react-app importa de forma automática la librería de React en cada uno
@@ -101,6 +102,8 @@ function App() {
         <Formulario />
         <hr />
         <Estilos />
+        <hr />
+        <ComponentesEstilizados />
       </section>
     </div>
   );
