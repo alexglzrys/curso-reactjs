@@ -1,0 +1,14 @@
+.estilos {
+    margin: 1rem auto;
+    max-width: 700px;
+    border: 1px dashed rgb(205, 205, 205);
+    padding: 1rem
+}
+
+.estilos__title {
+    color: #fff;
+    font-size: 1.5rem;
+    background-color: teal;
+    padding: 1rem;
+
+}

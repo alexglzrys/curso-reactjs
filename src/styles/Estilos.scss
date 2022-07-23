@@ -1,0 +1,21 @@
+/**
+Para usar SASS en Create-React-App
+
+es importante instalar node-sass
+npm i node-sass
+**/
+
+
+$fondo: rgb(160, 24, 108);
+$color: #fff;
+
+.estilos-sass {
+    background-color: $fondo;
+    color: $color;
+    padding: 1rem;
+    transition: background-color .2s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        background-color: darken($fondo, 10);
+    }
+}

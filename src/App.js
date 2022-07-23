@@ -18,6 +18,7 @@ import AjaxHooks from './components/AjaxHooks';
 import HooksPersonalizados from './components/HooksPersonalizados';
 import Referencias from './components/Referencias';
 import Formulario from './components/Formulario';
+import Estilos from './components/Estilos';
 
 /**
  * Nota: Desde React 17, create-react-app importa de forma automática la librería de React en cada uno
@@ -98,6 +99,8 @@ function App() {
         <Referencias />
         <hr />
         <Formulario />
+        <hr />
+        <Estilos />
       </section>
     </div>
   );

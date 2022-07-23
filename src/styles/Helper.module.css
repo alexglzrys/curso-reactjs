@@ -1,0 +1,27 @@
+/*
+Estilos CSS como módulos de React
+
+Su nombre de archivo debe ser archivo.module.css
+
+Son interesantes ya que solo se declara las clases CSS.
+Se importa como modulo con nombre esta hoja de estilo en el componente
+En el atributo className de cada componente se invoca el módulo seguido del nombre de la clase
+        <p className={Mimodulo.clase}>Elemento</p>
+React genera un ambito aislado para este tipo de clases basadas en módulos. 
+        Algo parecido a los estilos de los componentes en Angular, los cuales no se pisan entre si
+
+--- Una buena idea, sería que cada componente tenga su modulo de estilos CSS
+    con ello nos olvidamos de pisar estilos entre componentes, pues su estilo estaría en un ámbito aislado
+*/
+
+.error {
+    background-color: red;
+    color: white;
+    padding: 1rem;
+}
+
+.success {
+    background-color: rgb(32, 142, 142);
+    color: white;
+    padding: 1rem;
+}
