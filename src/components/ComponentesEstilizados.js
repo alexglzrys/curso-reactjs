@@ -1,6 +1,6 @@
 import React from "react";
 import styled, {
-  createGlobalStyle,
+    createGlobalStyle,
   css,
   keyframes,
   ThemeProvider,
@@ -85,19 +85,21 @@ const TextoRedondeado = styled(Texto)`
   border-radius: 2rem;
 `;
 
-// Aplicar estilos globales (lo ideal es hacerlo en index o App.js)
+// Aplicar estilos globales medainte Styled-Components
 const GlobalStyle = createGlobalStyle`
-        h4 {
-            color: #49b9ee;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            text-transform: uppercase;
-        }
-    `;
+    h4 {
+        color: #49b9ee;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-transform: uppercase;
+    }
+`;
+
 
 const ComponentesEstilizados = () => {
   return (
-    // No es obligatorio este wrapper - solo cuando deseamos aplicar estilos globales a la aplicación
-    <GlobalStyle>
+    <div>
+        {/* Solo cuando deseamos aplicar estilos globales a la aplicación. Esto es como un reset a nivel global */}
+      <GlobalStyle />
       <h4>Styled Components</h4>
       <Title>Soy un H3 estilizado con styled-components</Title>
       {/* Podemos variar el valor de algunos estilos entre elementos del mismo tipo */}
@@ -147,7 +149,7 @@ const ComponentesEstilizados = () => {
           conseq
         </TextoRedondeado>
       </ThemeProvider>
-    </GlobalStyle>
+    </div>
   );
 };
 

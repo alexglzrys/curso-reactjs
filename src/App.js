@@ -20,6 +20,8 @@ import Referencias from './components/Referencias';
 import Formulario from './components/Formulario';
 import Estilos from './components/Estilos';
 import ComponentesEstilizados from './components/ComponentesEstilizados';
+import Bootstrap from './components/frameworksCSS/Bootstrap';
+import Bulma from './components/frameworksCSS/Bulma';
 
 /**
  * Nota: Desde React 17, create-react-app importa de forma automática la librería de React en cada uno
@@ -104,6 +106,10 @@ function App() {
         <Estilos />
         <hr />
         <ComponentesEstilizados />
+        <br />
+        <Bootstrap />
+        <hr />
+        <Bulma />
       </section>
     </div>
   );
