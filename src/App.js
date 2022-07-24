@@ -22,6 +22,8 @@ import Estilos from './components/Estilos';
 import ComponentesEstilizados from './components/ComponentesEstilizados';
 import Bootstrap from './components/frameworksCSS/Bootstrap';
 import Bulma from './components/frameworksCSS/Bulma';
+import ReactBoostrap from './components/frameworksCSS/ReactBootstrap';
+import MaterialUI from './components/frameworksCSS/MaterialUI';
 
 /**
  * Nota: Desde React 17, create-react-app importa de forma automática la librería de React en cada uno
@@ -110,6 +112,10 @@ function App() {
         <Bootstrap />
         <hr />
         <Bulma />
+        <hr />
+        <ReactBoostrap />
+        <hr />
+        <MaterialUI />
       </section>
     </div>
   );
